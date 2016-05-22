@@ -20,14 +20,11 @@
     border: 0;
 }
 
-.jp-audio,
-.jp-audio-stream,
-.jp-video {
+.jp-audio {
     font-size: 16px;
     font-family: Verdana, Arial, sans-serif;
     line-height: 1.6;
     color: #666;
-    border: 1px solid #009be3;
     background-color: #eee;
 }
 
@@ -241,11 +238,8 @@
 
 .jp-volume-bar {
     float: left;
-    overflow: hidden;
-    background: url("../img/jplayer.bgp.jpg") 0 -250px repeat-x;
-    top: 5px;
-    left: 22px;
-    width: 46px;
+    background: black;
+    width: 80%;
     height: 5px;
     cursor: pointer;
 }
@@ -313,7 +307,6 @@
 .jp-playlist {
     width: 100%;
     background-color: #ccc;
-    border-top: 1px solid #009be3;
 }
 
 .jp-type-single .jp-details,
@@ -551,7 +544,6 @@ span.jp-artist {
     padding: 5px;
     font-size: .8em;
     background-color: #eee;
-    border: 2px solid #009be3;
     color: #000;
     display: none;
 }
