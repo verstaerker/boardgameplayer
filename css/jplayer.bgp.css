@@ -1,19 +1,11 @@
-/*! Blue Monday Skin for jPlayer 2.9.2 ~ (c) 2009-2014 Happyworm Ltd ~ MIT License */
+.clearfix::after {
+    display: block;
+    height: 0;
+    content: " ";
+    clear: both;
+}
 
-/*
- * Skin for jPlayer Plugin (jQuery JavaScript Library)
- * http://www.jplayer.org
- *
- * Skin Name: Blue Monday
- *
- * Copyright (c) 2010 - 2014 Happyworm Ltd
- * Licensed under the MIT license.
- *  - http://www.opensource.org/licenses/mit-license.php
- *
- * Author: Silvia Benvenuti
- * Skin Version: 5.1 (jPlayer 2.8.0)
- * Date: 13th November 2014
- */
+
 .jp-audio *:focus,
 .jp-audio-stream *:focus,
 .jp-video *:focus {
@@ -103,64 +95,17 @@
     width: 100%;
 }
 
-.jp-audio .jp-interface {
-    height: 80px;
-}
-
-.jp-audio-stream .jp-interface {
-    height: 80px;
-}
-
-.jp-video .jp-interface {
-    border-top: 1px solid #009be3;
-}
-
 /* @group CONTROLS */
 .jp-controls-holder {
-    clear: both;
-    width: 440px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    top: -8px;
-    /* This negative value depends on the size of the text in jp-currentTime and jp-duration */
+
 }
 
-.jp-interface .jp-controls {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.jp-audio .jp-controls {
-    width: 380px;
-    padding: 20px 20px 0 20px;
-}
-
-.jp-audio-stream .jp-controls {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 142px;
-}
-
-.jp-video .jp-type-single .jp-controls {
-    width: 78px;
-    margin-left: 200px;
-}
-
-.jp-video .jp-type-playlist .jp-controls {
-    width: 134px;
-    margin-left: 172px;
-}
-
-.jp-video .jp-controls {
-    float: left;
+.jp-controls {
+    text-align: center;
 }
 
 .jp-controls button {
-    display: block;
-    float: left;
+    display: inline-block;
     overflow: hidden;
     text-indent: -9999px;
     border: none;
@@ -222,31 +167,13 @@
 /* @end */
 /* @group progress bar */
 .jp-progress {
+    clear: both;
     overflow: hidden;
     background-color: #ddd;
 }
 
 .jp-audio .jp-progress {
-    position: absolute;
-    top: 32px;
-    height: 15px;
-}
-
-.jp-audio .jp-type-single .jp-progress {
-    left: 110px;
-    width: 186px;
-}
-
-.jp-audio .jp-type-playlist .jp-progress {
-    left: 166px;
-    width: 130px;
-}
-
-.jp-video .jp-progress {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 10px;
+    height: 5px;
 }
 
 .jp-seek-bar {
@@ -269,33 +196,13 @@
 
 /* @end */
 /* @group volume controls */
-.jp-state-no-volume .jp-volume-controls {
-    display: none;
-}
-
-.jp-volume-controls {
-    position: absolute;
-    top: 32px;
-    left: 308px;
-    width: 200px;
-}
-
-.jp-audio-stream .jp-volume-controls {
-    left: 70px;
-}
-
-.jp-video .jp-volume-controls {
-    top: 12px;
-    left: 50px;
-}
-
 .jp-volume-controls button {
     display: block;
-    position: absolute;
     overflow: hidden;
     text-indent: -9999px;
     border: none;
     cursor: pointer;
+    float: left;
 }
 
 .jp-mute,
@@ -333,7 +240,7 @@
 }
 
 .jp-volume-bar {
-    position: absolute;
+    float: left;
     overflow: hidden;
     background: url("../img/jplayer.bgp.jpg") 0 -250px repeat-x;
     top: 5px;
