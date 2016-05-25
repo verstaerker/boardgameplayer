@@ -107,7 +107,7 @@ $(function () {
             keyEnabled: true,
             remainingDuration: true,
             toggleDuration: true,
-            loop: true,
+            // loop: true,
             canplay: canplay
         };
 
@@ -153,16 +153,19 @@ $(function () {
         pause: onAtmospherePause,
         tracks: [
             {
-                disableMusic: true,
-                title: 'Crow 1',
-                // artist: 'The Stark Palace',
-                mp3: '/Users/Shared/Projekte/boardgameplayer/music/sampler/black-crows.mp3',
-                // pauseOther: true
+                title: 'Welcome',
+                mp3: '/Users/Shared/Projekte/boardgameplayer/music/ambiente/voy_engineering.mp3',
+                disableMusic: true
             },{
-                title: 'Crow 2',
-                // artist: 'The Stark Palace',
-                mp3: '/Users/Shared/Projekte/boardgameplayer/music/sampler/black-crows.mp3',
-                // pauseOther: true
+                title: 'Door',
+                mp3: '/Users/Shared/Projekte/boardgameplayer/music/ambiente/aliendoor03.mp3',
+                disableMusic: true
+            },{
+                title: 'Departing',
+                mp3: '/Users/Shared/Projekte/boardgameplayer/music/ambiente/voy_relativity_bridge.mp3'
+            },{
+                title: 'Departing',
+                mp3: '/Users/Shared/Projekte/boardgameplayer/music/ambiente/voy_bridge.mp3'
             }
         ]
     });
@@ -174,10 +177,9 @@ $(function () {
         },
         tracks: [
             {
-                title: 'Anvengers',
-                // artist: 'The Stark Palace',
-                delay: 5000,
-                mp3: '/Users/Shared/Projekte/boardgameplayer/music/music/® Avengers, The Score - 19 - Alan Silvestri - The Avengers.mp3',
+                title: 'T.I.M.E',
+                mp3: '/Users/Shared/Projekte/boardgameplayer/music/music/01-john_paesano-main_title-tsx.mp3',
+                delay: 2000
             }, {
                 title: 'Casino Royale',
                 artist: 'Unknown',
