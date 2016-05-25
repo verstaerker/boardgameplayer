@@ -1,0 +1,10 @@
+.bgap-navigation {
+    padding: 20px 0;
+    background: black;
+}
+
+.bgap-navigation__play {
+    border: 0;
+    background: #303030;
+    color: white;
+}
