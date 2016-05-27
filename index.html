@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <title>BoardGamePlayer</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/jplayer.bgp.css">
     <link rel="stylesheet" type="text/css" href="css/bgap.css">
 
     <script src="lib/jquery-2.2.4.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/jplayer/jplayer/jquery.jplayer.min.js"></script>
     <script src="lib/jplayer/add-on/jplayer.playlist.js"></script>
     <script src="js/bgap.js"></script>
@@ -24,7 +27,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="gba-main-controls">
-                    <button class="bgap-navigation__play">Play</button>
+                    <button class="btn btn-primary bgap-navigation__play">Play</button>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -36,29 +39,27 @@
 <div class="bgap-main container-fluid">
     <div class="row">
         <div class="col-sm-4">
+            <h3 data-toggle="collapse" data-target="#atmosphere-player">Ambiente</h3>
             <div id="atmosphere-object" class="jp"></div>
-            <div id="atmosphere-player" class="jp-audio" role="application" aria-label="media player">
+            <div id="atmosphere-player" class="jp-audio collapse in" role="application" aria-label="media player">
                 <div class="jp-type-single">
                     <div class="jp-gui jp-interface">
                         <div class="jp-controls-holder">
                             <div class="jp-volume-controls clearfix">
-                                <button class="jp-mute" role="button" tabindex="0">mute</button>
                                 <div class="jp-volume-bar">
                                     <div class="jp-volume-bar-value"></div>
                                 </div>
-                                <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
                             </div>
                             <div class="jp-controls clearfix">
                                 <button class="jp-previous" role="button" tabindex="0">previous</button>
                                 <button class="jp-play" role="button" tabindex="0">play</button>
                                 <button class="jp-next" role="button" tabindex="0">next</button>
                             </div>
-                            <div class="jp-toggles clearfix">
-                                <button class="jp-repeat" role="button" tabindex="0">repeat</button>
-                            </div>
                             <div class="jp-progress-wrap clearfix">
-                                <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-                                <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                                <div class="jp-progress-time clearfix">
+                                    <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                                    <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                                </div>
                                 <div class="jp-progress">
                                     <div class="jp-seek-bar">
                                         <div class="jp-play-bar"></div>
@@ -84,29 +85,27 @@
             </div>
         </div>
         <div class="col-sm-4">
+            <h3 data-toggle="collapse" data-target="#music-player">Music</h3>
             <div id="music-object" class="jp"></div>
-            <div id="music-player" class="jp-audio" role="application" aria-label="media player">
+            <div id="music-player" class="jp-audio collapse in" role="application" aria-label="media player">
                 <div class="jp-type-single">
                     <div class="jp-gui jp-interface">
                         <div class="jp-controls-holder">
                             <div class="jp-volume-controls clearfix">
-                                <button class="jp-mute" role="button" tabindex="0">mute</button>
                                 <div class="jp-volume-bar">
                                     <div class="jp-volume-bar-value"></div>
                                 </div>
-                                <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
                             </div>
                             <div class="jp-controls clearfix">
                                 <button class="jp-previous" role="button" tabindex="0">previous</button>
                                 <button class="jp-play" role="button" tabindex="0">play</button>
                                 <button class="jp-next" role="button" tabindex="0">next</button>
                             </div>
-                            <div class="jp-toggles clearfix">
-                                <button class="jp-repeat" role="button" tabindex="0">repeat</button>
-                            </div>
                             <div class="jp-progress-wrap clearfix">
-                                <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-                                <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                                <div class="jp-progress-time clearfix">
+                                    <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                                    <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                                </div>
                                 <div class="jp-progress">
                                     <div class="jp-seek-bar">
                                         <div class="jp-play-bar"></div>
@@ -132,7 +131,7 @@
             </div>
         </div>
         <div class="col-sm-4">
-            right
+            <h3>Sampler</h3>
         </div>
     </div>
 </div>

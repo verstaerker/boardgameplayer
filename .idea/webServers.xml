@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2d74c7fa-8261-483d-9280-9ae826dd6846" name="verstaerker" url="http://kafka.metanet.ch">
+        <fileTransfer host="kafka.metanet.ch" port="21" username="dervers">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="d2808cea-a5f8-4104-9d8a-182636793877" name="elfenbeinturm" url="http://bgap.elfenbeinturm.ch">
+        <fileTransfer host="elfenbeinturm.ch" port="21" rootFolder="/www" username="xcalch">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -8,7 +8,7 @@ body {
 .bgap-wallpaper {
     background-size: cover;
     background-position: center center;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     top: 0;
     right: 0;
@@ -16,8 +16,10 @@ body {
     left: 0;
 }
 
-.bgap-main {
-    max-width: 80%;
+@media (min-width: 750px) {
+    .bgap-main {
+        max-width: 80%;
+    }
 }
 
 .bgap-navigation {
@@ -31,8 +33,6 @@ body {
     text-align: center;
 }
 
-.bgap-navigation__play {
-    border: 0;
-    background: #303030;
-    color: white;
+[data-toggle] {
+    cursor: pointer;
 }
