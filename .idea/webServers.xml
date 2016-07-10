@@ -11,7 +11,7 @@
         </fileTransfer>
       </webServer>
       <webServer id="d2808cea-a5f8-4104-9d8a-182636793877" name="elfenbeinturm" url="http://bgap.elfenbeinturm.ch">
-        <fileTransfer host="elfenbeinturm.ch" port="21" rootFolder="/www" username="xcalch">
+        <fileTransfer host="elfenbeinturm.ch" port="21" rootFolder="/www" password="df8edfdadfc3dfc4dfc1df9edfd9dfc6dfc3dfcedfcfdfd8dfd9df8bdfe2dfc5dfd9dfde" username="xcalch">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
