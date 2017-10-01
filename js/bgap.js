@@ -105,6 +105,7 @@ $(function () {
             remainingDuration: true,
             toggleDuration: true,
             noVolume: false,
+            volume: 1,
             // loop: true,
             canplay: canplay
         };
@@ -204,6 +205,7 @@ $(function () {
             });
     }
 
+    // Create atmosphere player
     createPlayer(SELECTOR_ATMOSPHERE_OBJ, SELECTOR_ATMOSPHERE_PLAYER, {
         cssSelectorAncestor: SELECTOR_ATMOSPHERE_PLAYER,
         play: onAtmospherePlay,
@@ -212,8 +214,10 @@ $(function () {
         tracks: [/* use playlists.js */]
     });
 
+    // Create music player
     createPlayer(SELECTOR_MUSIC_OBJ, SELECTOR_MUSIC_PLAYER, {
         cssSelectorAncestor: SELECTOR_MUSIC_PLAYER,
+        volume: 0.6,
         play: function (e) {
             play.call(this, e.jPlayer.status.media, true);
         },
