@@ -4,3 +4,5 @@
 /music/music/*
 /music/sampler/*
 /img/wallpapers/
+/.htaccess
+/music/playlists.js
